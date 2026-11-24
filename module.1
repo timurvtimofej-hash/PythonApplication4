@@ -1,0 +1,25 @@
+# 1️
+# Sisestatakse 15 arvu.
+# Määrata, mitu neist on täisarvud.
+for i in range(15):
+    try:
+        arv=float(input(f"{i+1}. arv: "))
+        if arv.is_integer():
+            print(f"{arv}on täisarv.")
+        else:
+            print(f"{arv} ei ole täisarv.")
+    except ValueError:
+        print("Palun sisestega arv.")
+
+#while kasutades
+i = 0
+while i < 15:
+    try:
+        arv = float(input(f"{i + 1}. arv: "))
+        if arv.is_integer():
+            print(f"{arv} on täisarv.")
+        else:
+            print(f"{arv} ei ole täisarv.")
+    except ValueError:
+        print("Palun sisestage arv.")
+    i += 1
